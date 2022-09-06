@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    
+    --Azul_suave: hsl(215, 51%, 70%);
+    --Ciano: hsl(178, 100%, 50%);
+    --Azul_muito_escuro_BG_principal: hsl(217, 54%, 11%);
+    --Azul_muito_escuro_cartão_BG: hsl(216, 50%, 16%);
+    --Azul_muito_escuro_linha: hsl(215, 32%, 27%);
+    --Branco:hsl(0, 0%, 100%);
+    
+    --Fonte: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Azul_muito_escuro_BG_principal);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 350px;
+    height: 600px;
+    background-color: var(--Azul_muito_escuro_cartão_BG);
+    font-family: var(--Fonte);
+    text-align: justify;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.equilibrium{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.equilibrium img{
+    width: 100%;
+    display: block;
+}
+
+.view{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+.view img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.equilibrium:hover .view{
+    display: block;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.ether p{
+    color: var(--Ciano);
+}
+.clock p{
+    color: var(--Azul_suave);
+}
+div{
+    display: flex;
+    gap: 5px;
+}
+.text p{
+    
+    padding: 22px 0px 25px 0px;
+    color:var(--Azul_suave);
+}
+
+h1{
+    color: var(--Branco);
+    padding-top: 22px;
+}
+h1:hover{
+    color: var(--Ciano);
+}
+a{
+    text-decoration: none;
+    color: var(--Branco);
+}
+a:hover{
+    color:var(--Ciano);
+}
+hr{
+    margin: 20px 0px 20px 0px;
+    border: 1.25px var(--Azul_muito_escuro_linha) solid;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.avatar img{
+    width: 10%;
+    border: 1.25px white solid;
+    border-radius:  50%;
+    
+}
+.avatar p{
+    color: var(--Azul_suave);
+}
+
+
