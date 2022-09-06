@@ -75,24 +75,29 @@ main{
 .ether p{
     color: var(--Ciano);
 }
+.ether{
+    display: flex;
+    gap: 4px;
+}
+.clock{
+    display: flex;
+    gap: 4px;
+}
 .clock p{
     color: var(--Azul_suave);
 }
-div{
-    display: flex;
-    gap: 5px;
-}
+
 .text p{
     
     padding: 22px 0px 25px 0px;
     color:var(--Azul_suave);
 }
 
-h1{
+h2{
     color: var(--Branco);
     padding-top: 22px;
 }
-h1:hover{
+h2:hover{
     color: var(--Ciano);
 }
 a{
