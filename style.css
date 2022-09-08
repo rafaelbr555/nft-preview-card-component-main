@@ -33,6 +33,7 @@ main{
     text-align: justify;
     font-size: 18px;
     padding: 25px;
+
     border-radius: 20px;
 }
 
@@ -54,6 +55,7 @@ main{
     width: 100%;
     background-color: hsla(178, 100%, 50%, 0.5);
     display: none;
+    transition: .3s ease;
 }
 .view img {
     position: absolute;
@@ -64,6 +66,8 @@ main{
 }
 .equilibrium:hover .view{
     display: block;
+    opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -126,4 +130,10 @@ hr{
     color: var(--Azul_suave);
 }
 
-
+@media (max-width: 375px) {
+    main{
+        flex-wrap: wrap;
+        margin: 32px;
+    }
+    
+}
